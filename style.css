@@ -1,0 +1,463 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+/*               End of Setup             */
+
+/* Navbar */
+header {
+  background-color:rgba(22, 22, 23, .8); /* Adjust the background color as needed */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1200px; /* Adjust the max-width of the container as needed */
+  margin: 0 auto; /* Center the container */
+  padding: 10px; /* Add padding as needed */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 10px; /* Adjust the spacing between list items as needed */
+}
+
+.nav-button {
+  text-decoration: none;
+  color: white; /* Adjust the text color as needed */
+  padding: 10px;
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.nav-button:hover {
+  background-color: #555; /* Adjust the background color on hover as needed */
+}
+
+#nav-apple-logo img {
+  width: 16x;
+  height: 16px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+#nav-search-logo img {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+#nav-bag-logo img {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.nav-button {
+  font-family: 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* End Navbar */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('images/iphone_15_pro.png') center/cover no-repeat; /* Adjust the path based on your folder structure */
+  display: flex;
+  align-items: flex-start; /* Align text to the top */
+  justify-content: center;
+  color: white; /* Text color */
+  text-align: center;
+  padding-top: 50px; /* Adjust the top padding as needed */
+}
+
+.prod-info {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.prod-name {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.prod-slogan {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.prod-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.prod-links li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 25px;
+}
+
+.prod-links a {
+  font-family: 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+/* Hero Section */
+
+/* Sub Hero Section */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.hero-sub-section {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to the next line */
+}
+
+.col-3 {
+  flex: 1;
+  position: relative;
+  width: 25%; /* Four-column layout */
+}
+
+.hero-sub-item {
+  position: relative;
+}
+
+.hero-sub-item img {
+  width: 100%;
+  height: 100%; /* Give the images the same height */
+  object-fit: cover; /* Arrange images to cover them proportionally */
+}
+
+.prod2-info {
+  position: absolute;
+  top: 1.0%; /* Product name and slogan on top */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white; /* Make the text white */
+  width: 80%;
+}
+
+.prod2-info h3 {
+  font-size: 1.2em;
+  margin-bottom: 0.2px;
+  color: white; /* Make the text white */
+}
+
+.prod2-info p {
+  font-size: 0.8em;
+  margin-bottom: 15px;
+  color: white; /* Make the text white */
+}
+
+#hero-sub-iphone15 .prod2-info h3,
+#hero-sub-iphone15 .prod2-info p,
+#hero-sub-watch_ultra2 .prod2-info h3,
+#hero-sub-watch_ultra2 .prod2-info p,
+#hero-sub-macbook_pro .prod2-info h3,
+#hero-sub-macbook_pro .prod2-info p {
+  color: black; /* Black color for iPhone 15, Apple Watch Ultra 2, MacBook Pro */
+}
+
+.prod2-links-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -90px; /* You can set the distance you want */
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: flex-end; /* Align buttons to bottom edge */
+}
+
+.prod2-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.prod2-links li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.prod2-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: #3498db;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.7em;
+}
+
+.prod2-links a:last-child {
+  margin-right: 0; /* Reset the right margin of the last button */
+}
+
+/* Solid blue buttons */
+.prod2-info .prod2-links a {
+  background-color: #3498db;
+  color: white;
+}
+/* Sub Hero Section */
+
+/* Recall Link Section */
+.hero-sub-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-3 {
+  flex: 1;
+  position: relative;
+  width: 25%;
+  margin-bottom: 15px; /* Remove the space between them */
+}
+
+.hero-sub-item {
+  position: relative;
+}
+
+#exchange {
+  text-align: center; /* Center the link */
+  margin-top: 0; /* Remove headspace */
+  margin-bottom: 15px;
+}
+
+#exchange a {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: none;
+}
+/* Recall Link Section */
+
+/* Footer */
+footer {
+  background-color: #f2f2f2;
+  font-size: 11.94px;
+  line-height: 1.66667;
+  color: #666;
+  padding: 20px 0;
+}
+
+/* Define styles for each category */
+.links {
+  display: inline-block;
+  width: 33.33%;
+  vertical-align: top;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: #666; /* Set default color */
+}
+
+/* Footer help section */
+.footer-help {
+  color: #999;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  border-top: 1px solid #e3e3e3;
+}
+
+.footer-help > p:first-child {
+  margin-bottom: 6px;
+  padding-bottom: 5px;
+}
+
+.footer-help > p:first-child > a {
+  color: #08c;
+  text-decoration: none;
+}
+
+.footer-help > p:first-child > a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Legal links section */
+#legal-links > a {
+  color: #666;
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: 400; /* Set default font weight to 400 */
+}
+
+#legal-links > a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Locale section */
+#locale {
+  float: right;
+  margin-top: 0px; /* Adjust as needed */
+}
+
+#locale > a {
+  color: #666;
+  text-decoration: none;
+  font-weight: 400; /* Set default font weight to 400 */
+}
+
+#locale > a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+#locale-flag {
+  display: inline-block;
+  height: 16px;
+  width: 21px;
+  background: url(images/usa.png) 3px 0 no-repeat;
+  background-size: 16px 16px;
+  margin-top: 0px;
+  margin-right: 5px; /* Adjust as needed */
+}
+/* Footer */.
+
+/* Fonts */
+/* Product Names and Slogans */
+.prod-name,
+.prod-slogan,
+.prod2-info h3,
+.prod2-info p {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Product Links */
+.prod-links a,
+.prod2-links a,
+#exchange a {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Navigation Links */
+.nav-button {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Footer Links */
+.links a {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Footer Help Section */
+.footer-help,
+.footer-help a {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Legal Links Section */
+#legal-links a {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Locale Section */
+#locale a {
+  font-family: 'Helvetica Neue', sans-serif;
+}
