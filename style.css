@@ -130,7 +130,8 @@ li {
   ul {
     justify-content: center; /* Liste elemanlarını merkeze hizala */
   }
-
+  
+  #nav-apple-logo img,
   #nav-search-logo img,
   #nav-bag-logo img {
     width: 12px; /* Logo genişliğini küçült */
@@ -148,13 +149,13 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  background: url('images/iphone_15_pro.png') center/cover no-repeat; /* Adjust the path based on your folder structure */
+  background: url('images/iphone_15_pro.png') center/cover no-repeat;
   display: flex;
-  align-items: flex-start; /* Align text to the top */
+  align-items: flex-start;
   justify-content: center;
-  color: white; /* Text color */
+  color: white;
   text-align: center;
-  padding-top: 50px; /* Adjust the top padding as needed */
+  padding-top: 50px;
 }
 
 .prod-info {
@@ -198,6 +199,33 @@ body {
   border: 1px solid white;
   padding: 8px 15px;
   border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .prod-name {
+    font-size: 2em;
+  }
+  .prod-slogan {
+    font-size: 1em;
+  }
+  .prod-links a {
+    padding: 6px 12px;
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .prod-name {
+    font-size: 1.5em;
+  }
+  .prod-slogan {
+    font-size: 0.8em;
+  }
+  .prod-links a {
+    padding: 5px 10px;
+    font-size: 0.8em;
+  }
 }
 /* Hero Section */
 
