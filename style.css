@@ -73,7 +73,7 @@ table {
 
 /* Navbar */
 header {
-  background-color:rgba(22, 22, 23, .8); /* Adjust the background color as needed */
+  background-color: rgba(22, 22, 23, .8); /* Adjust the background color as needed */
 }
 
 nav {
@@ -99,30 +99,20 @@ li {
 }
 
 .nav-button {
+  font-family: 'Helvetica Neue', sans-serif;
   text-decoration: none;
-  color: white; /* Adjust the text color as needed */
+  font-size: 14px;
+  color: white;
   padding: 10px;
-  border-radius: 5px; /* Add border radius for rounded corners */
+  border-radius: 5px;
 }
 
 .nav-button:hover {
   background-color: #555; /* Adjust the background color on hover as needed */
 }
 
-#nav-apple-logo img {
-  width: 16x;
-  height: 16px;
-  display: inline-block;
-  margin: 0 auto;
-}
-
-#nav-search-logo img {
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  margin: 0 auto;
-}
-
+#nav-apple-logo img,
+#nav-search-logo img,
 #nav-bag-logo img {
   width: 16px;
   height: 16px;
@@ -130,13 +120,22 @@ li {
   margin: 0 auto;
 }
 
-.nav-button {
-  font-family: 'Helvetica Neue', sans-serif;
-  text-decoration: none;
-  font-size: 14px;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
+@media only screen and (max-width: 768px) {
+  .nav-button {
+    font-size: 10px; /* Yazı boyutunu küçült */
+    padding: 2px; /* Düğme dolgusunu küçült */
+    margin-right: 2px; /* Liste elemanları arasındaki boşluğu azalt */
+  }
+
+  ul {
+    justify-content: center; /* Liste elemanlarını merkeze hizala */
+  }
+
+  #nav-search-logo img,
+  #nav-bag-logo img {
+    width: 12px; /* Logo genişliğini küçült */
+    height: 12px; /* Logo yüksekliğini küçült */
+  }
 }
 /* End Navbar */
 
@@ -251,6 +250,15 @@ body {
   color: white; /* Make the text white */
 }
 
+.prod2-buy {
+  background-color: #3498db; /* Mavi dolgu rengi */
+  color: white; /* Beyaz yazı rengi */
+  text-decoration: none; /* Altı çizili olmasın */
+  padding: 8px 15px; /* Düğme dolgusu */
+  border-radius: 5px; /* Kenar yuvarlaklığı */
+  font-size: 0.7em; /* Yazı boyutu */
+}
+
 #hero-sub-iphone15 .prod2-info h3,
 #hero-sub-iphone15 .prod2-info p,
 #hero-sub-watch_ultra2 .prod2-info h3,
@@ -260,45 +268,16 @@ body {
   color: black; /* Black color for iPhone 15, Apple Watch Ultra 2, MacBook Pro */
 }
 
-.prod2-links-container {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  bottom: -90px; /* You can set the distance you want */
-  left: 50%;
-  transform: translateX(-50%);
-  align-items: flex-end; /* Align buttons to bottom edge */
-}
-
-.prod2-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.prod2-links li {
-  display: inline-block;
-  margin-right: 15px;
-}
-
-.prod2-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  background-color: #3498db;
-  padding: 8px 15px;
-  border-radius: 5px;
-  font-size: 0.7em;
-}
-
-.prod2-links a:last-child {
-  margin-right: 0; /* Reset the right margin of the last button */
-}
-
-/* Solid blue buttons */
-.prod2-info .prod2-links a {
-  background-color: #3498db;
-  color: white;
+@media only screen and (max-width: 768px) {
+  .prod2-info h3,
+  .prod2-info p,
+  .prod2-buy {
+    font-size: 0.5em; /* Yazı boyutunu küçült */
+    overflow: hidden; /* Taşma engelleme */
+    padding: 4px 8px; /* Düğme dolgusunu küçült */
+    text-overflow: ellipsis; /* Taşan yazıları üç nokta ile sınırla */
+    white-space: nowrap; /* Yazıları tek satırda tut */
+  }
 }
 /* Sub Hero Section */
 
@@ -345,10 +324,10 @@ footer {
 /* Define styles for each category */
 .links {
   display: inline-block;
-  width: 33.33%;
+  width: 20%;
   vertical-align: top;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: none;
 }
 
 .links a {
@@ -418,7 +397,7 @@ footer {
   margin-top: 0px;
   margin-right: 5px; /* Adjust as needed */
 }
-/* Footer */.
+/* Footer */
 
 /* Fonts */
 /* Product Names and Slogans */
